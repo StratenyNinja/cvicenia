@@ -4,7 +4,7 @@
 - **úloha 1** - *hotová*
 - **úloha 2** - *hotová*
 - **úloha 3** - *hotová*
-- **úloha 4** - *nie je hotová*
+- **úloha 4** - *hotová*
 - **úloha 5** - *nie je hotová*
 - **úloha 6** - *nie je hotová*
 - **úloha 7** - *nie je hotová*

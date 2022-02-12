@@ -26,3 +26,9 @@ print(f"{meno.capitalize()} bude mať o rok {vek + 1}.")
 print(f"{meno.capitalize()} bude mať o 10 rokov {vek + 10}.")
 
 # 4)
+pi = 3.14159
+r = float(input("zadaj polomer: "))
+print(f"Obvod je {2 * pi * r}.")
+print(f"Obsah je {pi * r ** 2}.")
+
+# 5)
