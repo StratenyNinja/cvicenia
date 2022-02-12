@@ -13,3 +13,24 @@
 - **úloha 10** - *hotová*
 - **úloha 11** - *hotová*
 - **úloha 12** - *hotová*
+## Cvičenie 2
+- **úloha 1** - *nie je hotová*
+- **úloha 2** - *nie je hotová*
+- **úloha 3** - *nie je hotová*
+- **úloha 4** - *nie je hotová*
+- **úloha 5** - *nie je hotová*
+- **úloha 6** - *nie je hotová*
+- **úloha 7** - *nie je hotová*
+- **úloha 8** - *nie je hotová*
+- **úloha 9** - *nie je hotová*
+- **úloha 10** - *nie je hotová*
+- **úloha 11** - *nie je hotová*
+- **úloha 12** - *nie je hotová*
+- **úloha 13** - *nie je hotová*
+- **úloha 14** - *nie je hotová*
+- **úloha 15** - *nie je hotová*
+- **úloha 16** - *nie je hotová*
+- **úloha 17** - *nie je hotová*
+- **úloha 18** - *nie je hotová*
+- **úloha 19** - *nie je hotová*
+- **úloha 20** - *nie je hotová*
