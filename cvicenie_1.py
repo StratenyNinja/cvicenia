@@ -58,3 +58,27 @@ print(slovo3, slovo1, slovo2)
 print(slovo3, slovo2, slovo1)
 
 # 8)
+txt = input("zadaj text: ") + "\n"
+print(txt * 10, end="")
+
+# 9)
+dni = 12*365 + 8*30 + 21
+hodin = dni * 24
+sekund = hodin * 3600
+print("počet dní je", dni)
+print("počet hodín je", hodin)
+print("počet sekúnd je", sekund)
+
+# 10)
+b = int(input("zadaj počet bajtov: "))
+print("maximálna hodnota je", 256 ** b - 1)
+
+# 11)
+n = int(input("zadaj n: "))
+print(f"na {n}. políčku bude {2 ** (n-1)} zrniek ryže")
+print("na 64. políčku bude", round(2 ** 63 / 50 / 1000000, 2), "ton ryže")
+
+# 12)
+cislo1 = int(input("zadaj 1. číslo: "))
+cislo2 = int(input("zadaj 2. číslo: "))
+print(f"{cislo1}+{cislo2}={cislo1 + cislo2}")
