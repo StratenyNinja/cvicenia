@@ -14,9 +14,9 @@
 - **úloha 11** - *hotová*
 - **úloha 12** - *hotová*
 ## Cvičenie 2
-- **úloha 1** - *nie je hotová*
-- **úloha 2** - *nie je hotová*
-- **úloha 3** - *nie je hotová*
+- **úloha 1** - *hotová*
+- **úloha 2** - *hotová*
+- **úloha 3** - *hotová*
 - **úloha 4** - *nie je hotová*
 - **úloha 5** - *nie je hotová*
 - **úloha 6** - *nie je hotová*
