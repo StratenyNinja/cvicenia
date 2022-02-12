@@ -22,6 +22,11 @@ for i in range(n):
 # 5)
 n = int(input("zadaj n: "))
 for i in range(n):
-    print(" " * (n-i-1) + "*" * (1+i*2))
+    print(" " * (n-i-1) + "*" * (i*2+1))
 
 # 6)
+n = int(input("zadaj n: "))
+print(" " * (n-1) + "*")
+for i in range(1, n-1):
+    print(" " * (n-i-1) + "*" + "-" * (i*2-1) + "*")
+print("*" * (n*2-1))

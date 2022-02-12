@@ -19,7 +19,7 @@
 - **úloha 3** - *hotová*
 - **úloha 4** - *hotová*
 - **úloha 5** - *hotová*
-- **úloha 6** - *nie je hotová*
+- **úloha 6** - *hotová*
 - **úloha 7** - *nie je hotová*
 - **úloha 8** - *nie je hotová*
 - **úloha 9** - *nie je hotová*
