@@ -20,10 +20,10 @@
 - **úloha 4** - *hotová*
 - **úloha 5** - *hotová*
 - **úloha 6** - *hotová*
-- **úloha 7** - *nie je hotová*
-- **úloha 8** - *nie je hotová*
-- **úloha 9** - *nie je hotová*
-- **úloha 10** - *nie je hotová*
+- **úloha 7** - *hotová*
+- **úloha 8** - *hotová*
+- **úloha 9** - *hotová*
+- **úloha 10** - *hotová*
 - **úloha 11** - *nie je hotová*
 - **úloha 12** - *nie je hotová*
 - **úloha 13** - *nie je hotová*
