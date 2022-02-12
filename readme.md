@@ -5,4 +5,6 @@
 ###### Úloha 1
 *hotová*
 ###### Úloha 2
+*hotová*
+###### Úloha 3
 *nie je hotová*
