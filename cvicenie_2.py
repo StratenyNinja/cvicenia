@@ -123,10 +123,22 @@ for i in range(n):
     predtym += nastupilo - vystupilo
 
 # 17)
-
+riadky = int(input("zadaj počet riadkov: "))
+stlpce = int(input("zadaj počet stĺpcov: "))
+for i in range(riadky):
+    for j in range(stlpce):
+        print(random.choice("O-"), end="")
+    print()
 
 # 18)
-
+n = int(input("zadaj n: "))
+for i in range(n):
+    cislo1 = random.randint(1, 6)
+    cislo2 = random.randint(1, 6)
+    print("na 1. kocke padla", cislo1)
+    print("na 2. kocke padla", cislo2)
+    print("ich súčet je", cislo1+cislo2)
+    print("======================")
 
 # 19)
 

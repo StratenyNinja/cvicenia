@@ -30,7 +30,7 @@
 - **úloha 14** - *hotová*
 - **úloha 15** - *hotová*
 - **úloha 16** - *hotová*
-- **úloha 17** - *nie je hotová*
-- **úloha 18** - *nie je hotová*
+- **úloha 17** - *hotová*
+- **úloha 18** - *hotová*
 - **úloha 19** - *nie je hotová*
 - **úloha 20** - *nie je hotová*
