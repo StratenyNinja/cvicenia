@@ -18,4 +18,7 @@ n = 200
 for i in range(n):
     canvas.create_text(random.randint(0, 375), random.randint(0, 275), text="*", font=f"arial {random.randint(10, 20)}", fill="yellow")
 
+# 3)
+
+
 tkinter.mainloop()
