@@ -111,10 +111,16 @@ n = int(input("zadaj n: "))
 for i in range(n):
     bod1 = random.randint(0, 100)
     bod2 = random.randint(0, 100)
-    print(f"Prvý bod na priamke je {bod1}, druhý bod {bod2}. Ich vzdialenosť je {max(bod1, bod2)-min(bod1, bod2)}")
+    print(f"Prvý bod na priamke je {bod1}, druhý bod {bod2}. Ich vzdialenosť je {abs(bod1-bod2)}.")
 
 # 16)
-
+n = int(input("zadaj n: "))
+predtym = 100
+for i in range(n):
+    nastupilo = random.randint(0, 9)
+    vystupilo = random.randint(0, 9)
+    print(f"Vo vlaku bolo {predtym} ľudí, {nastupilo} nastúpilo, {vystupilo} vystúpilo. Zostalo {predtym+nastupilo-vystupilo}.")
+    predtym += nastupilo - vystupilo
 
 # 17)
 
