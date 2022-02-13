@@ -2,3 +2,36 @@
 - **Cvičenie 1** - *hotové*
 - **Cvičenie 2** - *hotové*
 - **Týždenný projekt 1** - *hotový*
+- **Cvičenie 3** - *nie je hotové*
+- **Cvičenie 4** - *nie je hotové*
+- **Týždenný projekt 2** - *nie je hotový*
+- **Cvičenie 5** - *nie je hotové*
+- **Cvičenie 6** - *nie je hotové*
+- **Týždenný projekt 3** - *nie je hotový*
+- **Cvičenie 7** - *nie je hotové*
+- **Cvičenie 8** - *nie je hotové*
+- **Týždenný projekt 4** - *nie je hotový*
+- **Cvičenie 9** - *nie je hotové*
+- **Cvičenie 10** - *nie je hotové*
+- **Týždenný projekt 5** - *nie je hotový*
+- **Cvičenie 11** - *nie je hotové*
+- **Cvičenie 12** - *nie je hotové*
+- **Týždenný projekt 6** - *nie je hotový*
+- **Cvičenie 13** - *nie je hotové*
+- **Týždenný projekt 7** - *nie je hotový*
+- **Cvičenie 14** - *nie je hotové*
+- **Cvičenie 15** - *nie je hotové*
+- **Týždenný projekt 8** - *nie je hotový*
+- **Cvičenie 16** - *nie je hotové*
+- **Týždenný projekt 9** - *nie je hotový*
+- **Cvičenie 17** - *nie je hotové*
+- **Cvičenie 18** - *nie je hotové*
+- **Týždenný projekt 10** - *nie je hotový*
+- **Cvičenie 19** - *nie je hotové*
+- **Cvičenie 20** - *nie je hotové*
+- **Týždenný projekt 11** - *nie je hotový*
+- **Cvičenie 21** - *nie je hotové*
+- **Cvičenie 22** - *nie je hotové*
+- **Týždenný projekt 12** - *nie je hotový*
+- **Cvičenie 23** - *nie je hotové*
+- **Týždenný projekt 13** - *nie je hotový*
