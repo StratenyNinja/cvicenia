@@ -27,7 +27,7 @@
 - **úloha 11** - *hotová*
 - **úloha 12** - *hotová*
 - **úloha 13** - *hotová*
-- **úloha 14** - *nie je hotová*
+- **úloha 14** - *hotová*
 - **úloha 15** - *nie je hotová*
 - **úloha 16** - *nie je hotová*
 - **úloha 17** - *nie je hotová*

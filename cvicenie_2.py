@@ -1,3 +1,6 @@
+from math import radians, sin, cos
+
+
 # 1)
 n = int(input("zadaj n: "))
 for i in range(n):
@@ -91,3 +94,13 @@ for i in range(od, do+1):
     for j in range(od, do+1):
         print(f"{i*j:4}", end=" ")
     print()
+
+# 14)
+od = int(input("zadaj od: "))
+do = int(input("zadaj do: "))
+krok = int(input("zadaj krok: "))
+for i in range(od, do+1, krok):
+    rad = radians(i)
+    sin2 = sin(rad) ** 2
+    cos2 = cos(rad) ** 2
+    print(f"{i:3} sin**2={sin2:6.4f} cos**2={cos2:6.4f} súčet={sin2+cos2}")
