@@ -59,3 +59,35 @@ od = int(input("zadaj od: "))
 do = int(input("zadaj do: "))
 for i in range(od, do+1):
     print(f"{i:3} {i**2:5} {i**3:7} {i**4:9}")
+
+# 11)
+pocet = int(input("zadaj počet: "))
+pi = 0
+citatel = 4
+for i in range(1, 2*pocet, 2):
+    pi += citatel/i
+    citatel = -citatel
+print("pi =", pi)
+
+# 12)
+samohlasky = input("zadaj samohlásky: ")
+for i in samohlasky:
+    print(f"S{i}d{i} m{i}ch{i} n{i} st{i}n{i}, s{i}d{i} {i} sp{i}.")
+
+# 13)
+od = int(input("zadaj od: "))
+do = int(input("zadaj do: "))
+for i in range(od, do+1):
+    for j in range(od, do+1):
+        print(f"{i*j:4}", end=" ")
+    print()
+print(f"     | ", end="")
+for i in range(od, do+1):
+    print(f"{i:4}", end=" ")
+print()
+print(f"=====|={'='*5*(do-od+1)}")
+for i in range(od, do+1):
+    print(f"{i:4} | ", end="")
+    for j in range(od, do+1):
+        print(f"{i*j:4}", end=" ")
+    print()
