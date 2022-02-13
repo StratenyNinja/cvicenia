@@ -104,3 +104,20 @@ for i in range(od, do+1, krok):
     sin2 = sin(rad) ** 2
     cos2 = cos(rad) ** 2
     print(f"{i:3} sin**2={sin2:6.4f} cos**2={cos2:6.4f} súčet={sin2+cos2}")
+
+# 15)
+
+
+# 16)
+
+
+# 17)
+
+
+# 18)
+
+
+# 19)
+
+
+# 20)
