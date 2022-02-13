@@ -42,4 +42,25 @@ for i in range(n*5, 0, -5):
     canvas.create_rectangle(x-i, y-i, x+i, y+i, fill=f1)
     f1, f2, f3 = f2, f3, f1
 
+# 5)
+canvas = tkinter.Canvas()
+canvas.pack(side="bottom")
+x, y = 10, 10
+sirka, vyska = 135, 90
+canvas.create_rectangle(x, y, x+sirka, y+vyska, fill="yellow")
+canvas.create_rectangle(x, y, x+sirka, y+vyska*2/3, fill="red")
+canvas.create_rectangle(x, y, x+sirka, y+vyska/3, fill="black")
+canvas.create_rectangle(x+sirka+25, y, x+2*sirka+25, y+vyska, fill="red")
+canvas.create_rectangle(x+sirka+25, y, x+sirka+25+sirka*2/3, y+vyska, fill="white")
+canvas.create_rectangle(x+sirka+25, y, x+sirka+25+sirka/3, y+vyska, fill="green")
+canvas.create_rectangle(x, y+vyska+25, x+sirka, y+2*vyska+25, fill="red")
+canvas.create_rectangle(x, y+vyska+25, x+sirka*2/3, y+2*vyska+25, fill="white")
+canvas.create_rectangle(x, y+vyska+25, x+sirka/3, y+2*vyska+25, fill="blue")
+canvas.create_rectangle(x+sirka+25, y+vyska+25, x+2*sirka+25, y+2*vyska+25, fill="red")
+canvas.create_rectangle(x+sirka+25, y+vyska+25, x+2*sirka+25, y+vyska+25+vyska*2/3, fill="blue")
+canvas.create_rectangle(x+sirka+25, y+vyska+25, x+2*sirka+25, y+vyska+25+vyska/3, fill="white")
+
+# 6)
+
+
 tkinter.mainloop()
