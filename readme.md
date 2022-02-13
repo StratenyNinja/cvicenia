@@ -1,6 +1,4 @@
 # CVIČENIA
 
-## Cvičenie 1
-***Hotové***
-## Cvičenie 2
-***Hotové***
+- **Cvičenie 1** - *hotové*
+- **Cvičenie 2** - *hotové*
