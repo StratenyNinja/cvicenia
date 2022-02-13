@@ -1,4 +1,5 @@
 from math import radians, sin, cos
+import random
 
 
 # 1)
@@ -106,7 +107,11 @@ for i in range(od, do+1, krok):
     print(f"{i:3} sin**2={sin2:6.4f} cos**2={cos2:6.4f} súčet={sin2+cos2}")
 
 # 15)
-
+n = int(input("zadaj n: "))
+for i in range(n):
+    bod1 = random.randint(0, 100)
+    bod2 = random.randint(0, 100)
+    print(f"Prvý bod na priamke je {bod1}, druhý bod {bod2}. Ich vzdialenosť je {max(bod1, bod2)-min(bod1, bod2)}")
 
 # 16)
 
