@@ -82,6 +82,8 @@ import random
 #    d = -d
 
 # 8)
-
+x, y = 70, 100
+r = 50
+dx, dy = 120, 60
 
 tkinter.mainloop()
