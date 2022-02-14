@@ -71,6 +71,17 @@ import random
 #    y -= 50
 
 # 7)
+#canvas = tkinter.Canvas()
+#canvas.pack()
+#x, y = 10, 100
+#n, d = 16, 20
+#for i in range(n):
+#    x2, y2 = x+abs(d), y+d
+#    canvas.create_line(x, y, x2, y2, width="5", fill="blue")
+#    x, y = x2, y2
+#    d = -d
+
+# 8)
 
 
 tkinter.mainloop()
