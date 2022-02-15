@@ -94,6 +94,19 @@ for farba in "blue", "yellow", "black", "limegreen", "red":
     dy = -dy
 
 # 9)
-hodnota = random.choice((1, 2, 5, 10, 20, 50))
+canvas = tkinter.Canvas()
+canvas.pack()
+suma = 0
+x, y = 150, 50
+y2 = y
+sirka, vyska = 50, 20
+n = 10
+for i in range(n):
+    hodnota = random.choice((1, 2, 5, 10, 20, 50))
+    canvas.create_rectangle(x, y, x+sirka, y+vyska, fill="white")
+    canvas.create_text(x+sirka/2, y+vyska/2, text=f"{hodnota} €", font="arial 10")
+    suma += hodnota
+    y += vyska
+canvas.create_text(x+sirka*2.5, y2+vyska*1.5, text=f"spolu = {suma} €", font="arial 10 bold")
 
 tkinter.mainloop()
