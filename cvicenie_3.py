@@ -109,4 +109,7 @@ for i in range(n):
     y += vyska
 canvas.create_text(x+sirka*2.5, y2+vyska*1.5, text=f"spolu = {suma} €", font="arial 10 bold")
 
+# 10)
+
+
 tkinter.mainloop()
