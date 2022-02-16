@@ -110,6 +110,17 @@ for i in range(n):
 canvas.create_text(x+sirka*2.5, y2+vyska*1.5, text=f"spolu = {suma} €", font="arial 10 bold")
 
 # 10)
+canvas = tkinter.Canvas()
+canvas.pack()
+r, n = 20, 30
+for i in range(n):
+    cislica = random.choice("0123456789")
+    farba = f"#{random.randint(0, 256**3):06x}"
+    x, y = random.randint(0, 350), random.randint(0, 250)
+    canvas.create_oval(x, y, x+r*2, y+r*2, fill=farba)
+    canvas.create_text(x+r, y+r, text=cislica, font="arial 30")
+
+# 11)
 
 
 tkinter.mainloop()
