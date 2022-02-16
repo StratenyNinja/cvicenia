@@ -134,6 +134,17 @@ for pismeno in txt:
     x += sirka
 
 # 12)
+canvas = tkinter.Canvas()
+canvas.pack()
+n = int(input("zadaj n: "))
+x, y = 5, 5
+sirka = (370 - (n-1) * 5) // n
+for i in range(n):
+    farba = f"#{random.randint(0, 256**3):06x}"
+    canvas.create_rectangle(x, y, x+sirka, y+sirka, fill=farba)
+    x += sirka+5
+
+# 13)
 
 
 tkinter.mainloop()
