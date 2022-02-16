@@ -1,4 +1,6 @@
 # CVIČENIA
+***CVIČENIA SÚ ZO STRÁNKY [Programovanie v Pythone](https://python.input.sk/index.html).***
+## ZIMNÝ SEMESTER
 - **Cvičenie 1** - *hotové*
 - **Cvičenie 2** - *hotové*
 - **Týždenný projekt 1** - *hotový*
