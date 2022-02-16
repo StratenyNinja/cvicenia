@@ -145,6 +145,11 @@ for i in range(n):
     x += sirka+5
 
 # 13)
+x, y = 50, 250
+a = 280
+bod_a, bod_b, bod_c = (x, y), (x+a, y), (x+a/2, y-((a**2)-((a/2)**2))**(1/2)) # y - v (pytagorova veta)
+canvas.create_polygon(bod_a, bod_b, bod_c, fill="blue")
 
+# 14)
 
 tkinter.mainloop()
