@@ -121,6 +121,19 @@ for i in range(n):
     canvas.create_text(x+r, y+r, text=cislica, font="arial 30")
 
 # 11)
+canvas = tkinter.Canvas()
+canvas.pack()
+txt = input("zadaj text: ")
+x, y = 10, 10
+sirka = 30
+for pismeno in txt:
+    farba_stvorca = f"#{random.randint(0, 256**3):06x}"
+    farba_pismena = f"#{random.randint(0, 256**3):06x}"
+    canvas.create_rectangle(x, y, x+sirka, y+sirka, fill=farba_stvorca)
+    canvas.create_text(x+sirka/2, y+sirka/2, text=pismeno, font="arial 26", fill=farba_pismena)
+    x += sirka
+
+# 12)
 
 
 tkinter.mainloop()
