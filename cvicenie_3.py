@@ -145,11 +145,26 @@ for i in range(n):
     x += sirka+5
 
 # 13)
+canvas = tkinter.Canvas()
+canvas.pack()
 x, y = 50, 250
 a = 280
 bod_a, bod_b, bod_c = (x, y), (x+a, y), (x+a/2, y-((a**2)-((a/2)**2))**(1/2)) # y - v (pytagorova veta)
 canvas.create_polygon(bod_a, bod_b, bod_c, fill="blue")
 
 # 14)
+canvas = tkinter.Canvas()
+canvas.pack()
+n = 20
+for i in range(n):
+    sirka = random.randint(10, 50)
+    vc = round(((sirka**2)-((sirka//2)**2))**(1/2), 0)
+    x, y = random.randint(0, 500-sirka), random.randint(vc, 500-sirka)
+    bod_a, bod_b, bod_c = (x, y), (x+sirka, y), (x+sirka//2, y-vc)
+    canvas.create_rectangle(x, y, x+sirka, y+sirka, fill=f"#{random.randint(0, 256**3):06x}", outline="")
+    canvas.create_polygon(bod_a, bod_b, bod_c, fill=f"#{random.randint(0, 256**3):06x}")
+
+# 15)
+
 
 tkinter.mainloop()
