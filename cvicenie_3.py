@@ -165,6 +165,16 @@ for i in range(n):
     canvas.create_polygon(bod_a, bod_b, bod_c, fill=f"#{random.randint(0, 256**3):06x}")
 
 # 15)
+canvas = tkinter.Canvas()
+canvas.pack()
+sirka, vyska = 300, 200
+x, y = 25, 25
+canvas.create_rectangle(x, y, x+sirka, y+vyska/2, fill="white", width=0)
+canvas.create_rectangle(x, y+vyska/2, x+sirka, y+vyska, fill="red", width=0)
+canvas.create_polygon(x, y, x, y+vyska, x+sirka/2, y+vyska/2, fill="navy")
+canvas.create_rectangle(x, y, x+sirka, y+vyska)
+
+# 16)
 
 
 tkinter.mainloop()
