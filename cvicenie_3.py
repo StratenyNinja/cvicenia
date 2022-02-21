@@ -153,7 +153,7 @@ bod_a, bod_b, bod_c = (x, y), (x+a, y), (x+a/2, y-((a**2)-((a/2)**2))**(1/2)) # 
 canvas.create_polygon(bod_a, bod_b, bod_c, fill="blue")
 
 # 14)
-canvas = tkinter.Canvas()
+canvas = tkinter.Canvas(height=500, width=500)
 canvas.pack()
 n = 20
 for i in range(n):
@@ -175,6 +175,35 @@ canvas.create_polygon(x, y, x, y+vyska, x+sirka/2, y+vyska/2, fill="navy")
 canvas.create_rectangle(x, y, x+sirka, y+vyska)
 
 # 16)
+canvas = tkinter.Canvas()
+canvas.pack()
+riadky = int(input("zadaj počet riadkov: "))
+stlpce = int(input("zadaj počet stĺpcov: "))
+vel = 30
+farba1, farba2 = 'maroon', 'gold'
+x, y = 10, 10
+for riadok in range(riadky):
+    f1, f2 = farba1, farba2
+    for stlpec in range(stlpce):
+        canvas.create_rectangle(x, y, x+vel, y+vel, fill=f1)
+        f1, f2 = f2, f1
+        x += vel+3
+    farba1, farba2 = farba2, farba1
+    x = 10
+    y += vel+3
+
+# 17)
+canvas = tkinter.Canvas(height=250, width=375)
+canvas.pack()
+r, b = 250, 0
+x, y = 0, 0
+for i in range(25):
+    canvas.create_rectangle(x, y, x+15, y+250, fill=f"#{r:02x}00{b:02x}", outline="")
+    x += 15
+    r -= 10
+    b += 10
+
+# 18)
 
 
 tkinter.mainloop()
