@@ -213,6 +213,14 @@ for i in range(25):
 # skusim to dokoncit
 
 # 21)
-# skusim to dokoncit
+x, y = 30, 30
+sir, vys = 325, 216
+modra, cervena = "#0b4ea2", "#ee1c25"
+obrazok = tkinter.PhotoImage(file="sk.png")
+canvas.create_rectangle(x, y, x+sir, y+vys, fill=cervena, outline="")
+canvas.create_rectangle(x, y, x+sir, y+vys*2/3, fill=modra, outline="")
+canvas.create_rectangle(x, y, x+sir, y+vys/3, fill="white", outline="")
+canvas.create_rectangle(x, y, x+sir, y+vys)
+canvas.create_image(x+100, y+vys/2, image=obrazok)
 
 tkinter.mainloop()
