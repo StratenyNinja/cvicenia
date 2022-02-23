@@ -204,6 +204,15 @@ for i in range(25):
     b += 10
 
 # 18)
+# skusim to dokoncit
 
+# 19)
+# skusim to dokoncit
+
+# 20)
+# skusim to dokoncit
+
+# 21)
+# skusim to dokoncit
 
 tkinter.mainloop()
