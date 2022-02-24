@@ -1,5 +1,6 @@
 import tkinter
 import random
+from math import sin, cos, radians
 
 
 # 1)
