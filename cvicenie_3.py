@@ -205,7 +205,17 @@ for i in range(25):
     b += 10
 
 # 18)
-# skusim to dokoncit
+canvas = tkinter.Canvas()
+canvas.pack()
+x, y = 180, 130
+n, a = 7, 100
+r = a / sin(radians(180/n)) / 2
+x1, y1 = x + r, y
+for i in range(1, n+1):
+    x2 = x + r * cos(radians(i * 360 / n))
+    y2 = y + r * sin(radians(i * 360 / n))
+    canvas.create_line(x1, y1, x2, y2, width=3)
+    x1, y1, = x2, y2
 
 # 19)
 # skusim to dokoncit
@@ -214,6 +224,8 @@ for i in range(25):
 # skusim to dokoncit
 
 # 21)
+canvas = tkinter.Canvas()
+canvas.pack()
 x, y = 30, 30
 sir, vys = 325, 216
 modra, cervena = "#0b4ea2", "#ee1c25"
