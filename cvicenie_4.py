@@ -23,3 +23,11 @@ while n > 1:
         print(f", {n}", end="")
 
 # 3)
+cislo, spolu, x = 1, 0, 1
+while cislo != 0:
+    cislo = float(input(f"zadaj {x}. číslo: "))
+    spolu += cislo
+    x += 1
+print("súčet všetkých prečítaných čísel je", spolu)
+
+# 4)
