@@ -94,5 +94,34 @@ while cislo:
     canvas.create_text(x+15, y+15, text=cifra, font="arial 20")
     x -= 35
 
+# 8)
+canvas = tk.Canvas()
+canvas.pack()
+n = 13
+for i in range(n):
+    for j in range(n):
+        x = j * 20 + 100
+        y = i * 20 + 12
+        if i == n//2 or j == n//2:
+            farba = 'red'
+        else:
+            farba = 'white'
+        canvas.create_oval(x-8, y-8, x+8, y+8, fill=farba)
+
+canvas = tk.Canvas()
+canvas.pack()
+n = 13
+for i in range(n):
+    for j in range(n):
+        x = j * 20 + 100
+        y = i * 20 + 12
+        if i == j or j+i == n-1:
+            farba = 'red'
+        else:
+            farba = 'white'
+        canvas.create_oval(x-8, y-8, x+8, y+8, fill=farba)
+
+# 9)
+
 
 tk.mainloop()
