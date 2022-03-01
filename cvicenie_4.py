@@ -49,7 +49,7 @@ cs = 0
 while cislo:
     cifra = cislo % 10
     cs += cifra
-    cislo //= 10    
+    cislo //= 10
     print(cifra)
 print("ciferný súčet =", cs)
 
@@ -62,13 +62,37 @@ x, y = 300, 150
 while cislo:
     cifra = cislo % 10
     cs += cifra
-    cislo //= 10    
+    cislo //= 10
     canvas.create_rectangle(x, y, x+30, y+30, fill="lightblue")
     canvas.create_text(x+15, y+15, text=cifra, font="arial 20")
     x -= 35
 
 # 7)
+canvas = tk.Canvas()
+canvas.pack()
+cislo = int(input("zadaj číslo: "))
+cs = 0
+x, y = 300, 150
+while cislo:
+    cifra = cislo % 8
+    cs += cifra
+    cislo //= 8
+    canvas.create_rectangle(x, y, x+30, y+30, fill="lightblue")
+    canvas.create_text(x+15, y+15, text=cifra, font="arial 20")
+    x -= 35
 
+canvas = tk.Canvas()
+canvas.pack()
+cislo = int(input("zadaj číslo: "))
+cs = 0
+x, y = 300, 150
+while cislo:
+    cifra = cislo % 2
+    cs += cifra
+    cislo //= 2
+    canvas.create_rectangle(x, y, x+30, y+30, fill="lightblue")
+    canvas.create_text(x+15, y+15, text=cifra, font="arial 20")
+    x -= 35
 
 
 tk.mainloop()
