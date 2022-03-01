@@ -59,14 +59,13 @@ canvas.pack()
 cislo = int(input("zadaj číslo: "))
 cs = 0
 x, y = 300, 150
-a = 30
 while cislo:
     cifra = cislo % 10
     cs += cifra
     cislo //= 10    
-    canvas.create_rectangle(x, y, x+a, y+a, fill="lightblue")
-    canvas.create_text(x+a/2, y+a/2, text=cifra, font="arial 20")
-    x -= a+5
+    canvas.create_rectangle(x, y, x+30, y+30, fill="lightblue")
+    canvas.create_text(x+15, y+15, text=cifra, font="arial 20")
+    x -= 35
 
 # 7)
 
