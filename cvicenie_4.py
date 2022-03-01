@@ -1,5 +1,5 @@
 import tkinter as tk
-import random
+from random import randint
 
 
 # 1)
@@ -163,7 +163,7 @@ for i in range(10):
     x = 10
     sucet = 0
     while sucet < k:
-        cislo = random.randint(1, 4)
+        cislo = randint(1, 4)
         canvas.create_oval(x, y, x+20, y+20)
         canvas.create_text(x+10, y+10, text=cislo, font="arial 10")
         sucet += cislo
@@ -172,10 +172,22 @@ for i in range(10):
         t, f = "HURÁ", "green"
     else:
         t, f = "ŠKODA", "red"
-    canvas.create_text(300, y+10, text=t, font="arial 10", fill=f)
+    canvas.create_text(325, y+10, text=t, font="arial 10", fill=f)
     y += 25
 
 # 12)
+canvas = tk.Canvas(width=300, height=300)
+canvas.pack()
+for i in range(4000):
+    x = randint(0, 300)
+    y = randint(0, 300)
+    if 75 < x < 225 and 75 < y < 225:
+        f = "red"
+    else:
+        f = "blue"
+    canvas.create_oval(x, y, x+10, y+10, fill=f, width=0)
+
+# 13)
 
 
 tk.mainloop()
