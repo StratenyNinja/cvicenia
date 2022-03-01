@@ -31,3 +31,26 @@ while cislo != 0:
 print("súčet všetkých prečítaných čísel je", spolu)
 
 # 4)
+cislo = int(input("zadaj číslo: "))
+print(cislo, end=" ")
+delitel = 2
+znak = "="
+while cislo > 1:
+    if cislo % delitel == 0:
+        print(znak, delitel, end=" ")
+        cislo //= delitel
+        znak = "*"
+    else:
+        delitel += 1
+
+# 5)
+cislo = int(input("zadaj číslo: "))
+cs = 0
+while cislo:
+    cifra = cislo % 10
+    cs += cifra
+    cislo //= 10    
+    print(cifra)
+print("ciferný súčet =", cs)
+
+# 6)
