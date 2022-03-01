@@ -155,6 +155,27 @@ while r > 14:
     r -= 3
 
 # 11)
+canvas = tk.Canvas(width=350, height=275)
+canvas.pack()
+k = 21
+y = 10
+for i in range(10):
+    x = 10
+    sucet = 0
+    while sucet < k:
+        cislo = random.randint(1, 4)
+        canvas.create_oval(x, y, x+20, y+20)
+        canvas.create_text(x+10, y+10, text=cislo, font="arial 10")
+        sucet += cislo
+        x += 25
+    if sucet == k:
+        t, f = "HURÁ", "green"
+    else:
+        t, f = "ŠKODA", "red"
+    canvas.create_text(300, y+10, text=t, font="arial 10", fill=f)
+    y += 25
+
+# 12)
 
 
 tk.mainloop()
