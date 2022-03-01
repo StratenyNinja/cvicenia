@@ -1,10 +1,10 @@
 from math import sin, cos, radians
-import tkinter
+import tkinter as tk
 import random
 
 
 # 1)
-canvas = tkinter.Canvas()
+canvas = tk.Canvas()
 canvas.pack()
 x, y = 50, 50 # alebo 120, 10
 canvas.create_rectangle(x, y, x+100, y+100, fill="red")
@@ -13,14 +13,14 @@ canvas.create_text(x+50, y+50, text="červený", font="arial 20", fill="yellow")
 canvas.create_text(x+160, y+50, text="modrý", font="arial 20", fill="yellow")
 
 # 2)
-canvas = tkinter.Canvas(background="navy")
+canvas = tk.Canvas(background="navy")
 canvas.pack()
 n = 200
 for i in range(n):
     canvas.create_text(random.randint(0, 375), random.randint(0, 275), text="*", font=f"arial {random.randint(10, 20)}", fill="yellow")
 
 # 3)
-canvas = tkinter.Canvas()
+canvas = tk.Canvas()
 canvas.pack()
 x, y = 50, 50     # alebo 140, 20
 a1, a2 = 180, 100 # alebo 200, 190
@@ -34,7 +34,7 @@ canvas.create_text(x+a1+10, y+a1/2, text=a1)
 canvas.create_text(x+a1/2, y+a1/2+a2/2-10, text=a2)
 
 # 4)
-canvas = tkinter.Canvas()
+canvas = tk.Canvas()
 canvas.pack()
 x, y = 150, 150
 n = 20
@@ -44,7 +44,7 @@ for i in range(n*5, 0, -5):
     f1, f2, f3 = f2, f3, f1
 
 # 5)
-canvas = tkinter.Canvas()
+canvas = tk.Canvas()
 canvas.pack()
 x, y = 20, 20
 canvas.create_rectangle(x, y, x+135, y+90, fill="yellow", width=0)
@@ -68,7 +68,7 @@ canvas.create_rectangle(x, y, x+135, y+90/3, fill="white", width=0)
 canvas.create_rectangle(x, y, x+135, y+90)
 
 # 6)
-canvas = tkinter.Canvas()
+canvas = tk.Canvas()
 canvas.pack()
 x, y = 180, 250
 sirka, vyska = 200, 50
@@ -78,7 +78,7 @@ for farba in "darkgreen", "green", "yellowgreen", "limegreen":
     y -= 50
 
 # 7)
-canvas = tkinter.Canvas()
+canvas = tk.Canvas()
 canvas.pack()
 x, y = 10, 100 # bod zaciatku ciary
 n, d = 16, 20
@@ -89,7 +89,7 @@ for i in range(n):
     d = -d
 
 # 8)
-canvas = tkinter.Canvas()
+canvas = tk.Canvas()
 canvas.pack()
 x, y = 70, 100 # stred prveho kruhu
 r, w = 50, 15
@@ -101,7 +101,7 @@ for farba in "blue", "yellow", "black", "limegreen", "red":
     dy = -dy
 
 # 9)
-canvas = tkinter.Canvas()
+canvas = tk.Canvas()
 canvas.pack()
 suma = 0
 x, y = 150, 50
@@ -117,7 +117,7 @@ for i in range(n):
 canvas.create_text(x+sirka*2.5, y2+vyska*1.5, text=f"spolu = {suma} €", font="arial 10 bold")
 
 # 10)
-canvas = tkinter.Canvas()
+canvas = tk.Canvas()
 canvas.pack()
 r, n = 20, 30
 for i in range(n):
@@ -128,7 +128,7 @@ for i in range(n):
     canvas.create_text(x+r, y+r, text=cislica, font="arial 30")
 
 # 11)
-canvas = tkinter.Canvas()
+canvas = tk.Canvas()
 canvas.pack()
 txt = input("zadaj text: ")
 x, y = 10, 10
@@ -141,7 +141,7 @@ for pismeno in txt:
     x += sirka
 
 # 12)
-canvas = tkinter.Canvas()
+canvas = tk.Canvas()
 canvas.pack()
 n = int(input("zadaj n: "))
 x, y = 5, 5
@@ -152,7 +152,7 @@ for i in range(n):
     x += sirka+5
 
 # 13)
-canvas = tkinter.Canvas()
+canvas = tk.Canvas()
 canvas.pack()
 x, y = 50, 250
 a = 280
@@ -160,7 +160,7 @@ bod_a, bod_b, bod_c = (x, y), (x+a, y), (x+a/2, y-((a**2)-((a/2)**2))**(1/2)) # 
 canvas.create_polygon(bod_a, bod_b, bod_c, fill="blue")
 
 # 14)
-canvas = tkinter.Canvas(height=500, width=500)
+canvas = tk.Canvas(height=500, width=500)
 canvas.pack()
 n = 20
 for i in range(n):
@@ -172,7 +172,7 @@ for i in range(n):
     canvas.create_polygon(bod_a, bod_b, bod_c, fill=f"#{random.randint(0, 256**3):06x}")
 
 # 15)
-canvas = tkinter.Canvas()
+canvas = tk.Canvas()
 canvas.pack()
 sirka, vyska = 300, 200
 x, y = 25, 25
@@ -182,7 +182,7 @@ canvas.create_polygon(x, y, x, y+vyska, x+sirka/2, y+vyska/2, fill="navy")
 canvas.create_rectangle(x, y, x+sirka, y+vyska)
 
 # 16)
-canvas = tkinter.Canvas()
+canvas = tk.Canvas()
 canvas.pack()
 riadky = int(input("zadaj počet riadkov: "))
 stlpce = int(input("zadaj počet stĺpcov: "))
@@ -200,7 +200,7 @@ for riadok in range(riadky):
     y += vel+3
 
 # 17)
-canvas = tkinter.Canvas(height=250, width=375)
+canvas = tk.Canvas(height=250, width=375)
 canvas.pack()
 x = 0
 for i in range(25):
@@ -210,7 +210,7 @@ for i in range(25):
     x += 15
 
 # 18)
-canvas = tkinter.Canvas()
+canvas = tk.Canvas()
 canvas.pack()
 n = int(input("zadaj n: "))
 a = float(input("zadaj dĺžku strany: "))
@@ -230,16 +230,16 @@ for i in range(1, n+1):
 # skusim to dokoncit
 
 # 21)
-canvas = tkinter.Canvas()
+canvas = tk.Canvas()
 canvas.pack()
 x, y = 30, 30
 sir, vys = 325, 216
 modra, cervena = "#0b4ea2", "#ee1c25"
-obrazok = tkinter.PhotoImage(file="sk.png")
+obrazok = tk.PhotoImage(file="sk.png")
 canvas.create_rectangle(x, y, x+sir, y+vys, fill=cervena, outline="")
 canvas.create_rectangle(x, y, x+sir, y+vys*2/3, fill=modra, outline="")
 canvas.create_rectangle(x, y, x+sir, y+vys/3, fill="white", outline="")
 canvas.create_rectangle(x, y, x+sir, y+vys)
 canvas.create_image(x+100, y+vys/2, image=obrazok)
 
-tkinter.mainloop()
+tk.mainloop()
