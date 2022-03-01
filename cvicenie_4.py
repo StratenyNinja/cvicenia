@@ -122,6 +122,39 @@ for i in range(n):
         canvas.create_oval(x-8, y-8, x+8, y+8, fill=farba)
 
 # 9)
+vyssi, pred, ziak = True, 0, 1
+print("zadávaj výšky žiakov")
+while True:
+    vyska = input(f"    výška {ziak}. žiaka: ")
+    if vyska == "":
+        break
+    vyska = int(vyska)
+    if vyska < pred:
+        vyssi = False
+    pred = vyska
+    ziak += 1
+if vyssi:
+    print("všetci žiaci sú zoradení správne")
+else:
+    print("žiaci nie sú správne zoradení")
+
+# 10)
+canvas = tk.Canvas()
+canvas.pack()
+x, y = 190, 130
+r = 120
+k = 6
+i = 0
+while r > 14:
+    if i % k:
+        farba = "black"
+    else:
+        farba = "gray"
+    canvas.create_oval(x-r, y-r, x+r, y+r, outline=farba)
+    i += 1
+    r -= 3
+
+# 11)
 
 
 tk.mainloop()
