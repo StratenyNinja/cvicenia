@@ -261,6 +261,24 @@ for i in range(10000):
     canvas.create_oval(x-5, y-5, x+5, y+5, fill=f, width=0)
 
 # 18)
+canvas = tk.Canvas(width=360, height=260)
+canvas.pack()
+for i in range(10000):
+    x = randint(10, 350)
+    y = randint(10, 250)
+    if y < 130:
+        if y > x:
+            f = "blue"
+        else:
+            f = "white"
+    else:
+        if 130-x > y-130:
+            f = "blue"
+        else:
+            f = "red"
+    canvas.create_oval(x-5, y-5, x+5, y+5, fill=f, width=0)
+
+# 19)
 
 
 tk.mainloop()
