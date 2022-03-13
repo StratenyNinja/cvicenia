@@ -279,6 +279,23 @@ for i in range(10000):
     canvas.create_oval(x-5, y-5, x+5, y+5, fill=f, width=0)
 
 # 19)
+suma = int(input("začínam so sumou: "))
+print("štart", end=" ")
+for i in range(1000):
+    suma -= 1
+    print("-1", end="")
+    c1 = randint(1, 20)
+    c2 = randint(1, 20)
+    c3 = randint(1, 20)
+    if c1 == c2 == c3:
+        suma += 100
+        print("+100", end="")
+    if c1 == c2 or c1 == c3 or c2 == c3:
+        suma += 5
+        print("+5", end="")
+    if suma == 0:
+        break
+print("\nzostalo mi", suma, "euro")
 
 
 tk.mainloop()
