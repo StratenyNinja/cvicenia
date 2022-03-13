@@ -233,6 +233,26 @@ for i in range(10000):
 print(cervene / 10000 * 4)
 
 # 16)
+canvas = tk.Canvas(width=300, height=300)
+canvas.pack()
+n = 7
+najm_x, najm_y = 300, 300
+najv_x, najv_y = 0, 0
+for i in range(n):
+    x = randint(0, 300)
+    y = randint(0, 300)
+    if najm_x > x:
+        najm_x = x
+    if najm_y > y:
+        najm_y = y
+    if najv_x < x:
+        najv_x = x
+    if najv_y < y:
+        najv_y = y
+    canvas.create_oval(x-2, y-2, x+2, y+2, fill="red", width=0)
+canvas.create_rectangle(najm_x, najm_y, najv_x, najv_y, outline="blue")
+
+# 17)
 
 
 tk.mainloop()
