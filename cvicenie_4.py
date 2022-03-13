@@ -185,7 +185,7 @@ for i in range(4000):
         f = "red"
     else:
         f = "blue"
-    canvas.create_oval(x, y, x+10, y+10, fill=f, width=0)
+    canvas.create_oval(x-5, y-5, x+5, y+5, fill=f, width=0)
 
 # 13)
 canvas = tk.Canvas(width=300, height=300)
@@ -201,7 +201,7 @@ for i in range(4000):
         f = "red"
     else:
         f = "yellow"
-    canvas.create_oval(x, y, x+10, y+10, fill=f, width=0)
+    canvas.create_oval(x-5, y-5, x+5, y+5, fill=f, width=0)
 
 # 14)
 canvas = tk.Canvas(width=300, height=300)
@@ -215,7 +215,7 @@ for i in range(4000):
         f = "red"
     else:
         f = "blue"
-    canvas.create_oval(x1, y1, x1+10, y1+10, fill=f, width=0)
+    canvas.create_oval(x1-5, y1-5, x1+5, y1+5, fill=f, width=0)
 
 # 15)
 canvas = tk.Canvas(width=300, height=300)
@@ -229,7 +229,10 @@ for i in range(10000):
         cervene += 1
     else:
         f = "blue"
-    canvas.create_oval(x, y, x+4, y+4, fill=f, width=0)
+    canvas.create_oval(x-2, y-2, x+2, y+2, fill=f, width=0)
 print(cervene / 10000 * 4)
+
+# 16)
+
 
 tk.mainloop()
