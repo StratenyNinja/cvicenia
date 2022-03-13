@@ -206,18 +206,30 @@ for i in range(4000):
 # 14)
 canvas = tk.Canvas(width=300, height=300)
 canvas.pack()
-x0, y0 = 180, 130
+x2, y2 = 180, 130
 r = 110
 for i in range(4000):
-    x = randint(0, 300)
-    y = randint(0, 300)
-    if (x - x0) ** 2 + (y - y0) ** 2 <= r ** 2:
+    x1 = randint(0, 300)
+    y1 = randint(0, 300)
+    if (x1-x2)**2 + (y1-y2)**2 <= r ** 2:
         f = "red"
     else:
         f = "blue"
-    canvas.create_oval(x, y, x+10, y+10, fill=f, width=0)
+    canvas.create_oval(x1, y1, x1+10, y1+10, fill=f, width=0)
 
 # 15)
-
+canvas = tk.Canvas(width=300, height=300)
+canvas.pack()
+cervene = 0
+for i in range(10000):
+    x = randint(0, 300)
+    y = randint(0, 300)
+    if x**2 + y**2 <= 300**2:
+        f = "red"
+        cervene += 1
+    else:
+        f = "blue"
+    canvas.create_oval(x, y, x+4, y+4, fill=f, width=0)
+print(cervene / 10000 * 4)
 
 tk.mainloop()
