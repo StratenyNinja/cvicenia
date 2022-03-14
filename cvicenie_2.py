@@ -62,7 +62,7 @@ print(retazec)
 od = int(input("zadaj od: "))
 do = int(input("zadaj do: "))
 for i in range(od, do+1):
-    print(f"{i:3} {i**2:5} {i**3:7} {i**4:9}")
+    print(f"{i:3} {i**2:6} {i**3:8} {i**4:10}")
 
 # 11)
 pocet = int(input("zadaj počet: "))
@@ -102,8 +102,8 @@ for i in range(od, do+1):
 od = int(input("zadaj od: "))
 do = int(input("zadaj do: "))
 krok = int(input("zadaj krok: "))
-for i in range(od, do+1, krok):
-    rad = radians(i)
+for uhol in range(od, do+1, krok):
+    rad = radians(uhol)
     sin2 = sin(rad) ** 2
     cos2 = cos(rad) ** 2
     print(f"{i:3} sin**2={sin2:6.4f} cos**2={cos2:6.4f} súčet={sin2+cos2}")
