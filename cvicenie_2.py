@@ -113,7 +113,7 @@ n = int(input("zadaj n: "))
 for i in range(n):
     bod1 = random.randint(0, 100)
     bod2 = random.randint(0, 100)
-    print(f"Prvý bod na priamke je {bod1}, druhý bod {bod2}. Ich vzdialenosť je {abs(bod1-bod2)}.")
+    print(f"Prvý bod na priamke je {bod1}, druhý bod {bod2}. Ich vzdialenosť je", abs(bod1-bod2))
 
 # 16)
 n = int(input("zadaj n: "))
@@ -135,11 +135,11 @@ for i in range(riadky):
 # 18)
 n = int(input("zadaj n: "))
 for i in range(n):
-    cislo1 = random.randint(1, 6)
-    cislo2 = random.randint(1, 6)
-    print("na 1. kocke padla", cislo1)
-    print("na 2. kocke padla", cislo2)
-    print("ich súčet je", cislo1+cislo2)
+    kocka1 = random.randint(1, 6)
+    kocka2 = random.randint(1, 6)
+    print("na 1. kocke padla", kocka1)
+    print("na 2. kocke padla", kocka2)
+    print("ich súčet je", kocka1 + kocka2)
     print("======================")
 
 # 19)
