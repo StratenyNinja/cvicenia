@@ -106,7 +106,7 @@ for uhol in range(od, do+1, krok):
     rad = radians(uhol)
     sin2 = sin(rad) ** 2
     cos2 = cos(rad) ** 2
-    print(f"{i:3} sin**2={sin2:6.4f} cos**2={cos2:6.4f} súčet={sin2+cos2}")
+    print(f"{uhol:3} sin**2={sin2:6.4f} cos**2={cos2:6.4f} súčet={sin2+cos2}")
 
 # 15)
 n = int(input("zadaj n: "))
