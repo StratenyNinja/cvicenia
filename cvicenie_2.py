@@ -39,7 +39,7 @@ print("*" * (n*2-1))
 cislo = input("zadaj číslo: ")
 sucet = 0
 for i in range(len(cislo)):
-    print(f"{i+1}. cifra {cislo[i]}")
+    print(f"{i+1}. cifra", cislo[i])
     sucet += int(cislo[i])
 print("ciferný súčet je", sucet)
 
@@ -68,14 +68,14 @@ for i in range(od, do+1):
 pocet = int(input("zadaj počet: "))
 pi = 0
 citatel = 4
-for i in range(1, 2*pocet, 2):
-    pi += citatel/i
+for menovatel in range(1, 2*pocet, 2):
+    pi += citatel / menovatel
     citatel = -citatel
 print("pi =", pi)
 
 # 12)
 samohlasky = input("zadaj samohlásky: ")
-for i in samohlasky:
+for samohlasku in samohlasky:
     print(f"S{i}d{i} m{i}ch{i} n{i} st{i}n{i}, s{i}d{i} {i} sp{i}.")
 
 # 13)
