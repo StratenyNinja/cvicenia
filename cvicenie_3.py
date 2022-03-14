@@ -13,11 +13,11 @@ canvas.create_text(x+50, y+50, text="červený", font="arial 20", fill="yellow")
 canvas.create_text(x+160, y+50, text="modrý", font="arial 20", fill="yellow")
 
 # 2)
-canvas = tk.Canvas(background="navy")
+canvas = tk.Canvas(bg="navy")
 canvas.pack()
 n = 200
 for i in range(n):
-    canvas.create_text(random.randint(0, 375), random.randint(0, 275), text="*", font=f"arial {random.randint(10, 20)}", fill="yellow")
+    canvas.create_text(random.randint(5, 370), random.randint(5, 260), text="*", font=f"arial {random.randint(10, 20)}", fill="yellow")
 
 # 3)
 canvas = tk.Canvas()
