@@ -24,7 +24,7 @@ print("vzorec č.5 sa od pi líši o", abs(pi - pi5))
 # 3)
 meno = input("zadaj meno: ")
 vek = int(input("zadaj vek: "))
-print(meno, "má", vek, "rokov.")
+print(meno, "má", vek, "rokov")
 print(meno, "bude mať o rok", vek+1)
 print(meno, "bude mať o 10 rokov", vek+10)
 
