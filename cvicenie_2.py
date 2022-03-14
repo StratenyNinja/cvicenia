@@ -87,11 +87,11 @@ for i in range(od, do+1):
     print()
 print()
 
-print(f"     | ", end="")
+print("     | ", end="")
 for i in range(od, do+1):
     print(f"{i:4}", end=" ")
 print()
-print(f"=====|={'='*5*(do-od+1)}")
+print(f"=====|={'=' * 5 * (do-od+1)}")
 for i in range(od, do+1):
     print(f"{i:4} | ", end="")
     for j in range(od, do+1):
