@@ -149,8 +149,8 @@ for i in range(n):
     sucet = 0
     for j in range(kocky):
         cislo = random.randint(1, 6)
-        print(f"na {j+1}. kocke padla {cislo}")
         sucet += cislo
+        print(f"na {j+1}. kocke padla {cislo}")
     print("ich súčet je", sucet)
     print("======================")
 
@@ -160,5 +160,5 @@ for i in range(n):
     for x in range(3):
         for j in range(n):
             print(f"{i*n + j + 1:2}", end=" ")
-        print("   ", end="")
+        print(end="   ")
     print()
