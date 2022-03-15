@@ -83,7 +83,7 @@ canvas.pack()
 x, y = 10, 100 # bod zaciatku ciary
 n, d = 16, 20
 for i in range(n):
-    canvas.create_line(x, y, x+abs(d), y+d, width="5", fill="blue")
+    canvas.create_line(x, y, x+abs(d), y+d, width=5, fill="blue")
     x += abs(d)
     y += d
     d = -d
@@ -92,10 +92,10 @@ for i in range(n):
 canvas = tk.Canvas()
 canvas.pack()
 x, y = 70, 100 # stred prveho kruhu
-r, w = 50, 15
+r = 50
 dx, dy = 120, 60
 for farba in "blue", "yellow", "black", "limegreen", "red":
-    canvas.create_oval(x-r, y-r, x+r, y+r, width=w, outline=farba)
+    canvas.create_oval(x-r, y-r, x+r, y+r, width=15, outline=farba)
     x += dx/2
     y += dy
     dy = -dy
