@@ -120,8 +120,7 @@ canvas.pack()
 r, n = 20, 30
 for i in range(n):
     x, y = random.randint(20, 360), random.randint(20, 240)
-    farba = f"#{random.randint(0, 256**3):06x}"
-    canvas.create_oval(x-r, y-r, x+r, y+r, fill=farba)
+    canvas.create_oval(x-r, y-r, x+r, y+r, fill=f"#{random.randrange(256**3):06x}")
     canvas.create_text(x, y, text=random.randint(1, 9), font="arial 30")
 
 # 11)
@@ -130,10 +129,8 @@ canvas.pack()
 txt = input("zadaj text: ")
 x, y = 10, 10
 for pismeno in txt:
-    farba_s = f"#{random.randint(0, 256**3):06x}"
-    farba_p = f"#{random.randint(0, 256**3):06x}"
-    canvas.create_rectangle(x, y, x+30, y+30, fill=farba_s)
-    canvas.create_text(x+15, y+15, text=pismeno, font="arial 26", fill=farba_p)
+    canvas.create_rectangle(x, y, x+30, y+30, fill=f"#{random.randrange(256**3):06x}")
+    canvas.create_text(x+15, y+15, text=pismeno, font="arial 26", fill=f"#{random.randrange(256**3):06x}")
     x += 30
 
 # 12)
@@ -141,10 +138,9 @@ canvas = tk.Canvas()
 canvas.pack()
 n = int(input("zadaj n: "))
 x, y = 5, 5
-sirka = (370 - (n-1) * 5) // n
+sirka = 370//n - 5
 for i in range(n):
-    farba = f"#{random.randint(0, 256**3):06x}"
-    canvas.create_rectangle(x, y, x+sirka, y+sirka, fill=farba)
+    canvas.create_rectangle(x, y, x+sirka, y+sirka, fill=f"#{random.randrange(256**3):06x}")
     x += sirka+5
 
 # 13)
