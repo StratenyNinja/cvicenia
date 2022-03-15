@@ -71,10 +71,10 @@ canvas.create_rectangle(x, y, x+135, y+90)
 canvas = tk.Canvas()
 canvas.pack()
 x, y = 180, 250
-sirka, vyska = 200, 50
+sirka = 100
 for farba in "darkgreen", "green", "yellowgreen", "limegreen":
-    canvas.create_rectangle(x-sirka/2, y, x+sirka/2, y-vyska, fill=farba)
-    sirka -= 50
+    canvas.create_rectangle(x-sirka, y, x+sirka, y-50, fill=farba)
+    sirka -= 25
     y -= 50
 
 # 7)
