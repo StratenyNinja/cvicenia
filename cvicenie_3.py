@@ -119,11 +119,10 @@ canvas = tk.Canvas()
 canvas.pack()
 r, n = 20, 30
 for i in range(n):
-    cislica = random.choice("0123456789")
+    x, y = random.randint(20, 360), random.randint(20, 240)
     farba = f"#{random.randint(0, 256**3):06x}"
-    x, y = random.randint(0, 350), random.randint(0, 250)
-    canvas.create_oval(x, y, x+r*2, y+r*2, fill=farba)
-    canvas.create_text(x+r, y+r, text=cislica, font="arial 30")
+    canvas.create_oval(x-r, y-r, x+r, y+r, fill=farba)
+    canvas.create_text(x, y, text=random.randint(1, 9), font="arial 30")
 
 # 11)
 canvas = tk.Canvas()
