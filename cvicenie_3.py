@@ -148,13 +148,12 @@ canvas = tk.Canvas()
 canvas.pack()
 x, y = 50, 250
 a = 280
-bod_a, bod_b, bod_c = (x, y), (x+a, y), (x+a/2, y-((a**2)-((a/2)**2))**(1/2)) # pytagorova veta
-canvas.create_polygon(bod_a, bod_b, bod_c, fill="blue")
+canvas.create_polygon(x, y, x+a, y, x+a/2, y-3**(1/2)*a/2, fill="blue")
 
 # 14)
-canvas = tk.Canvas(height=500, width=500)
+canvas = tk.Canvas()
 canvas.pack()
-n = 20
+n = int(input("zadaj n: "))
 for i in range(n):
     sirka = random.randint(10, 50)
     vc = round(((sirka**2)-((sirka//2)**2))**(1/2), 0)
