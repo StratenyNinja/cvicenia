@@ -129,13 +129,12 @@ canvas = tk.Canvas()
 canvas.pack()
 txt = input("zadaj text: ")
 x, y = 10, 10
-sirka = 30
 for pismeno in txt:
-    farba_stvorca = f"#{random.randint(0, 256**3):06x}"
-    farba_pismena = f"#{random.randint(0, 256**3):06x}"
-    canvas.create_rectangle(x, y, x+sirka, y+sirka, fill=farba_stvorca)
-    canvas.create_text(x+sirka/2, y+sirka/2, text=pismeno, font="arial 26", fill=farba_pismena)
-    x += sirka
+    farba_s = f"#{random.randint(0, 256**3):06x}"
+    farba_p = f"#{random.randint(0, 256**3):06x}"
+    canvas.create_rectangle(x, y, x+30, y+30, fill=farba_s)
+    canvas.create_text(x+15, y+15, text=pismeno, font="arial 26", fill=farba_p)
+    x += 30
 
 # 12)
 canvas = tk.Canvas()
