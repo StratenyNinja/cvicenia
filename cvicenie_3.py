@@ -195,7 +195,7 @@ x = 0
 for i in range(25):
     r = 250 - i * 10
     b = 250 - r
-    canvas.create_rectangle(x, 0, x+15, 250, fill=f"#{r:02x}00{b:02x}", outline="")
+    canvas.create_rectangle(x, 0, x+15, 250, fill=f"#{r:02x}00{b:02x}", width=0)
     x += 15
 
 # 18)
