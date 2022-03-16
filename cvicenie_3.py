@@ -227,7 +227,17 @@ for i in range(n):
         canvas.create_line(x1, y1, x2, y2)
 
 # 20)
-# skusim to dokoncit
+canvas = tk.Canvas()
+canvas.pack()
+n = int(input("zadaj n: "))
+x0, y0, r0 = 180, 130, 80
+uhol = 360 / n
+r = r0 * sin(radians(uhol / 2))
+for i in range(n):
+    x = x0 + r0 * cos(radians(uhol*i))
+    y = y0 + r0 * sin(radians(uhol*i))
+    farba = f'#{random.randrange(256**3):06x}'
+    canvas.create_oval(x-r, y-r, x+r, y+r, fill=farba)
 
 # 21)
 canvas = tk.Canvas()
