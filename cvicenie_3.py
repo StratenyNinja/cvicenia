@@ -244,10 +244,9 @@ canvas = tk.Canvas()
 canvas.pack()
 x, y = 30, 30
 sir, vys = 325, 216
-modra, cervena = "#0b4ea2", "#ee1c25"
 obrazok = tk.PhotoImage(file="sk.png")
-canvas.create_rectangle(x, y, x+sir, y+vys, fill=cervena, width=0)
-canvas.create_rectangle(x, y, x+sir, y+vys*2/3, fill=modra, width=0)
+canvas.create_rectangle(x, y, x+sir, y+vys, fill="#ee1c25", width=0)
+canvas.create_rectangle(x, y, x+sir, y+vys*2/3, fill="#0b4ea2", width=0)
 canvas.create_rectangle(x, y, x+sir, y+vys/3, fill="white", width=0)
 canvas.create_rectangle(x, y, x+sir, y+vys)
 canvas.create_image(x+100, y+vys/2, image=obrazok)
