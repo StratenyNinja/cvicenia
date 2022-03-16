@@ -205,12 +205,12 @@ n = int(input("zadaj n: "))
 a = float(input("zadaj dĺžku strany: "))
 x, y = 180, 130
 r = a / sin(radians(180/n)) / 2
-x1, y1 = x + r, y
+x1, y1 = x+r, y
 for i in range(1, n+1):
     x2 = x + r * cos(radians(i * 360 / n))
     y2 = y + r * sin(radians(i * 360 / n))
     canvas.create_line(x1, y1, x2, y2, width=3)
-    x1, y1, = x2, y2
+    x1, y1 = x2, y2
 
 # 19)
 # skusim to dokoncit
@@ -225,9 +225,9 @@ x, y = 30, 30
 sir, vys = 325, 216
 modra, cervena = "#0b4ea2", "#ee1c25"
 obrazok = tk.PhotoImage(file="sk.png")
-canvas.create_rectangle(x, y, x+sir, y+vys, fill=cervena, outline="")
-canvas.create_rectangle(x, y, x+sir, y+vys*2/3, fill=modra, outline="")
-canvas.create_rectangle(x, y, x+sir, y+vys/3, fill="white", outline="")
+canvas.create_rectangle(x, y, x+sir, y+vys, fill=cervena, width=0)
+canvas.create_rectangle(x, y, x+sir, y+vys*2/3, fill=modra, width=0)
+canvas.create_rectangle(x, y, x+sir, y+vys/3, fill="white", width=0)
 canvas.create_rectangle(x, y, x+sir, y+vys)
 canvas.create_image(x+100, y+vys/2, image=obrazok)
 
