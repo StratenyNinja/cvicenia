@@ -19,6 +19,7 @@ while n > 1:
         n //= 2
     else:
         n = 3*n + 1
+print(n)
 
 # 3)
 cislo, spolu, x = 1, 0, 1
