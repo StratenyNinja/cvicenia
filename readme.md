@@ -4,7 +4,7 @@
 - **Cvičenie 1** - *hotové*
 - **Cvičenie 2** - *hotové*
 - **Týždenný projekt 1** - *hotový*
-- **Cvičenie 3** - *nie je hotové*
+- **Cvičenie 3** - *hotové*
 - **Cvičenie 4** - *nie je hotové*
 - **Týždenný projekt 2** - *nie je hotový*
 - **Cvičenie 5** - *nie je hotové*
