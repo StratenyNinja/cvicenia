@@ -13,14 +13,12 @@ print(f"na {d}. deň prebehne {x:.2f} km")
 
 # 2)
 n = int(input("zadaj číslo: "))
-print(n, end="")
 while n > 1:
+    print(n, end=", ")
     if n%2 == 0:
         n //= 2
-        print(f", {n}", end="")
     else:
         n = 3*n + 1
-        print(f", {n}", end="")
 
 # 3)
 cislo, spolu, x = 1, 0, 1
