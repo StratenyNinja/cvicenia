@@ -293,5 +293,10 @@ for i in range(1000):
         break
 print("\nzostalo mi", suma, "euro")
 
+# 20)
+
+# 21)
+
+# 22)
 
 tk.mainloop()
