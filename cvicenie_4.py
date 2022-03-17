@@ -96,9 +96,9 @@ for i in range(n):
         x = j * 20 + 100
         y = i * 20 + 12
         if i == n//2 or j == n//2:
-            farba = 'red'
+            farba = "red"
         else:
-            farba = 'white'
+            farba = "white"
         canvas.create_oval(x-8, y-8, x+8, y+8, fill=farba)
 
 canvas = tk.Canvas()
@@ -109,9 +109,9 @@ for i in range(n):
         x = j * 20 + 100
         y = i * 20 + 12
         if i == j or j+i == n-1:
-            farba = 'red'
+            farba = "red"
         else:
-            farba = 'white'
+            farba = "white"
         canvas.create_oval(x-8, y-8, x+8, y+8, fill=farba)
 
 # 9)
