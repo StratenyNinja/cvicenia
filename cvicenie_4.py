@@ -198,13 +198,12 @@ canvas.pack()
 x2, y2 = 180, 130
 r = 110
 for i in range(4000):
-    x1 = randint(0, 300)
-    y1 = randint(0, 300)
-    if (x1-x2)**2 + (y1-y2)**2 <= r ** 2:
-        f = "red"
+    x1, y1 = random.randint(0, 300), random.randint(0, 300)
+    if (x1-x2)**2 + (y1-y2)**2 <= r**2:
+        farba = "red"
     else:
-        f = "blue"
-    canvas.create_oval(x1-5, y1-5, x1+5, y1+5, fill=f, width=0)
+        farba = "blue"
+    canvas.create_oval(x1-5, y1-5, x1+5, y1+5, fill=farba, width=0)
 
 # 15)
 canvas = tk.Canvas(width=300, height=300)
