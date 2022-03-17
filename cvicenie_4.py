@@ -286,6 +286,11 @@ for i in range(1000):
 print("\nzostalo mi", suma, "euro")
 
 # 20)
+suma = int(input("zadaj číslo: "))
+for bankovka in 100, 50, 20, 10, 5, 2, 1:
+    if suma//bankovka != 0:
+        print(suma//bankovka, "krát hondota", bankovka)
+    suma %= bankovka
 
 # 21)
 
