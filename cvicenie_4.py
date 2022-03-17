@@ -278,7 +278,7 @@ for i in range(1000):
     if c1 == c2 == c3:
         suma += 100
         print("+100", end="")
-    if c1 == c2 or c1 == c3 or c2 == c3:
+    elif c1 == c2 or c1 == c3 or c2 == c3:
         suma += 5
         print("+5", end="")
     if suma == 0:
