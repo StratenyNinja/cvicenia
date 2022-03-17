@@ -226,8 +226,7 @@ n = 7
 najm_x, najm_y = 300, 300
 najv_x, najv_y = 0, 0
 for i in range(n):
-    x = randint(0, 300)
-    y = randint(0, 300)
+    x, y = random.randint(0, 300), random.randint(0, 300)
     if najm_x > x:
         najm_x = x
     if najm_y > y:
