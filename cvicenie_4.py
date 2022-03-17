@@ -210,15 +210,14 @@ canvas = tk.Canvas(width=300, height=300)
 canvas.pack()
 cervene = 0
 for i in range(10000):
-    x = randint(0, 300)
-    y = randint(0, 300)
+    x, y = random.randint(0, 300), random.randint(0, 300)
     if x**2 + y**2 <= 300**2:
-        f = "red"
+        farba = "red"
         cervene += 1
     else:
-        f = "blue"
-    canvas.create_oval(x-2, y-2, x+2, y+2, fill=f, width=0)
-print(cervene / 10000 * 4)
+        farba = "blue"
+    canvas.create_oval(x-2, y-2, x+2, y+2, fill=farba, width=0)
+print("podiel =", cervene / 10000 * 4)
 
 # 16)
 canvas = tk.Canvas(width=300, height=300)
