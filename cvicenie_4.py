@@ -270,13 +270,11 @@ for i in range(10000):
 
 # 19)
 suma = int(input("začínam so sumou: "))
-print("štart", end=" ")
+print("štart ", end="")
 for i in range(1000):
     suma -= 1
     print("-1", end="")
-    c1 = randint(1, 20)
-    c2 = randint(1, 20)
-    c3 = randint(1, 20)
+    c1, c2, c3 = random.randint(1, 20), random.randint(1, 20), random.randint(1, 20)
     if c1 == c2 == c3:
         suma += 100
         print("+100", end="")
