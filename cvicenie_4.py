@@ -18,7 +18,7 @@ while n > 1:
     if n%2 == 0:
         n //= 2
     else:
-        n = 3*n + 1
+        n = 3 * n + 1
 print(n)
 
 # 3)
@@ -137,7 +137,7 @@ canvas.pack()
 x, y = 190, 130
 r, k, i = 120, 6, 0
 while r > 14:
-    if i % k:
+    if i%k:
         farba = "black"
     else:
         farba = "gray"
@@ -181,17 +181,16 @@ for i in range(4000):
 canvas = tk.Canvas(width=300, height=300)
 canvas.pack()
 for i in range(4000):
-    x = randint(0, 300)
-    y = randint(0, 300)
-    if x <= y and 300 - x < y:
-        f = "green"
-    elif x > y and 300 - x >= y:
-        f = "blue"
-    elif x <= y and 300 - x >= y:
-        f = "red"
+    x, y = random.randint(0, 300), random.randint(0, 300)
+    if x <= y and 300-x < y:
+        farba = "green"
+    elif x > y and 300-x >= y:
+        farba = "blue"
+    elif x <= y and 300-x >= y:
+        farba = "red"
     else:
-        f = "yellow"
-    canvas.create_oval(x-5, y-5, x+5, y+5, fill=f, width=0)
+        farba = "yellow"
+    canvas.create_oval(x-5, y-5, x+5, y+5, fill=farba, width=0)
 
 # 14)
 canvas = tk.Canvas(width=300, height=300)
