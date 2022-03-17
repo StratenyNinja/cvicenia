@@ -22,8 +22,7 @@ while n > 1:
 print(n)
 
 # 3)
-spolu = 0
-cislo = x = 1
+spolu, cislo, x = 0, 1, 1
 while cislo != 0:
     cislo = float(input(f"zadaj {x}. číslo: "))
     spolu += cislo
