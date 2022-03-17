@@ -146,7 +146,7 @@ while r > 14:
     r -= 3
 
 # 11)
-canvas = tk.Canvas(width=350, height=275)
+canvas = tk.Canvas(width=350, height=260)
 canvas.pack()
 k = 21
 y = 10
@@ -160,10 +160,10 @@ for i in range(10):
         sucet += cislo
         x += 25
     if sucet == k:
-        t, f = "HURÁ", "green"
+        txt, farba = "HURÁ", "green"
     else:
-        t, f = "ŠKODA", "red"
-    canvas.create_text(325, y+10, text=t, font="arial 10", fill=f)
+        txt, farba = "ŠKODA", "red"
+    canvas.create_text(325, y+10, text=txt, font="arial 10", fill=farba)
     y += 25
 
 # 12)
