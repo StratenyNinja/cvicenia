@@ -242,15 +242,14 @@ canvas.create_rectangle(najm_x, najm_y, najv_x, najv_y, outline="blue")
 canvas = tk.Canvas(width=360, height=260)
 canvas.pack()
 for i in range(10000):
-    x = randint(10, 350)
-    y = randint(10, 250)
+    x, y = random.randint(10, 350), random.randint(10, 250)
     if y < 90:
-        f = "black"
+        farba = "black"
     elif y < 170:
-        f = "red"
+        farba = "red"
     else:
-        f = "gold"
-    canvas.create_oval(x-5, y-5, x+5, y+5, fill=f, width=0)
+        farba = "gold"
+    canvas.create_oval(x-5, y-5, x+5, y+5, fill=farba, width=0)
 
 # 18)
 canvas = tk.Canvas(width=360, height=260)
