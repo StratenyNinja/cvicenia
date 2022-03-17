@@ -35,7 +35,7 @@ print(cislo, end=" ")
 delitel = 2
 znak = "="
 while cislo > 1:
-    if cislo % delitel == 0:
+    if cislo%delitel == 0:
         print(znak, delitel, end=" ")
         cislo //= delitel
         znak = "*"
