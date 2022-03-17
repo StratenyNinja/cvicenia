@@ -255,19 +255,18 @@ for i in range(10000):
 canvas = tk.Canvas(width=360, height=260)
 canvas.pack()
 for i in range(10000):
-    x = randint(10, 350)
-    y = randint(10, 250)
+    x, y = random.randint(10, 350), random.randint(10, 250)
     if y < 130:
         if y > x:
-            f = "blue"
+            farba = "blue"
         else:
-            f = "white"
+            farba = "white"
     else:
         if 130-x > y-130:
-            f = "blue"
+            farba = "blue"
         else:
-            f = "red"
-    canvas.create_oval(x-5, y-5, x+5, y+5, fill=f, width=0)
+            farba = "red"
+    canvas.create_oval(x-5, y-5, x+5, y+5, fill=farba, width=0)
 
 # 19)
 suma = int(input("začínam so sumou: "))
