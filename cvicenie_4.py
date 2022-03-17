@@ -135,9 +135,7 @@ else:
 canvas = tk.Canvas()
 canvas.pack()
 x, y = 190, 130
-r = 120
-k = 6
-i = 0
+r, k, i = 120, 6, 0
 while r > 14:
     if i % k:
         farba = "black"
