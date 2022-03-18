@@ -207,8 +207,8 @@ x, y = 180, 130
 r = a / sin(radians(180/n)) / 2
 x1, y1 = x+r, y
 for i in range(1, n+1):
-    x2 = x + r * cos(radians(i * 360 / n))
-    y2 = y + r * sin(radians(i * 360 / n))
+    x2 = x + r * cos(radians(i*360/n))
+    y2 = y + r * sin(radians(i*360/n))
     canvas.create_line(x1, y1, x2, y2, width=3)
     x1, y1 = x2, y2
 
@@ -232,11 +232,11 @@ canvas.pack()
 n = int(input("zadaj n: "))
 x0, y0, r0 = 180, 130, 80
 uhol = 360 / n
-r = r0 * sin(radians(uhol / 2))
+r = r0 * sin(radians(uhol/2))
 for i in range(n):
     x = x0 + r0 * cos(radians(uhol*i))
     y = y0 + r0 * sin(radians(uhol*i))
-    farba = f'#{random.randrange(256**3):06x}'
+    farba = f"#{random.randrange(256**3):06x}"
     canvas.create_oval(x-r, y-r, x+r, y+r, fill=farba)
 
 # 21)
