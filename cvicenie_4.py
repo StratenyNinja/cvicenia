@@ -293,6 +293,16 @@ for bankovka in 100, 50, 20, 10, 5, 2, 1:
     suma %= bankovka
 
 # 21)
+cislo = float(input("zadaj číslo: "))
+x = 0
+od, do = 0, cislo
+while abs(2**x - cislo) > 0.0001:
+    x = (od + do) / 2
+    if 2**x > cislo:
+        do = x
+    else:
+        od = x
+print("logaritmus", cislo, "je", x)
 
 # 22)
 
