@@ -305,5 +305,24 @@ while abs(2**x - cislo) > 0.0001:
 print("logaritmus", cislo, "je", x)
 
 # 22)
+canvas = tk.Canvas(width=300, height=260)
+canvas.pack()
+
+a = xa, ya = 10, 100
+b = xb, yb = 250, 10
+c = xc, yc = 300, 250
+while True:
+    farba = f'#{random.randrange(256**3):06x}'
+    canvas.create_polygon(a, b, c, fill=farba)
+    a = (xa+xb)/2, (ya+yb)/2
+    b = (xb+xc)/2, (yb+yc)/2
+    c = xc, yc = (xc+xa)/2, (yc+ya)/2
+    xa, ya = a
+    xb, yb = b
+    d1 = ((xa-xb)**2 + (ya-yb)**2) ** .5
+    d2 = ((xc-xb)**2 + (yc-yb)**2) ** .5
+    d3 = ((xa-xc)**2 + (ya-yc)**2) ** .5
+    if d1 < 30 or d2 < 30 or d3 < 30:
+        break
 
 tk.mainloop()
