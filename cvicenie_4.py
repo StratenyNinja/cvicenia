@@ -307,7 +307,6 @@ print("logaritmus", cislo, "je", x)
 # 22)
 canvas = tk.Canvas(width=300, height=260)
 canvas.pack()
-
 a = xa, ya = 10, 100
 b = xb, yb = 250, 10
 c = xc, yc = 300, 250
