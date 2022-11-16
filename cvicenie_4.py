@@ -3,18 +3,18 @@ import random
 
 
 # 1)
-x = int(input("zadaj km pre prvý deň: "))
-y = int(input("zadaj cieľové km: "))
+x = int(input('zadaj km pre prvý deň: '))
+y = int(input('zadaj cieľové km: '))
 d = 1
 while x < y:
     x *= 1.1
     d += 1
-print(f"na {d}. deň prebehne {x:.2f} km")
+print(f'na {d}. deň prebehne {x:.2f} km')
 
 # 2)
-n = int(input("zadaj číslo: "))
+n = int(input('zadaj číslo: '))
 while n > 1:
-    print(n, end=", ")
+    print(n, end=', ')
     if n%2 == 0:
         n //= 2
     else:
@@ -24,67 +24,67 @@ print(n)
 # 3)
 spolu, cislo, x = 0, 1, 1
 while cislo != 0:
-    cislo = float(input(f"zadaj {x}. číslo: "))
+    cislo = float(input(f'zadaj {x}. číslo: '))
     spolu += cislo
     x += 1
-print("súčet všetkých prečítaných čísel je", spolu)
+print('súčet všetkých prečítaných čísel je', spolu)
 
 # 4)
-cislo = int(input("zadaj číslo: "))
-print(cislo, end=" ")
+cislo = int(input('zadaj číslo: '))
+print(cislo, end=' ')
 delitel = 2
-znak = "="
+znak = '='
 while cislo > 1:
     if cislo%delitel == 0:
-        print(znak, delitel, end=" ")
+        print(znak, delitel, end=' ')
         cislo //= delitel
-        znak = "*"
+        znak = '*'
     else:
         delitel += 1
 
 # 5)
-cislo = int(input("zadaj číslo: "))
+cislo = int(input('zadaj číslo: '))
 cs = 0
 while cislo:
     cifra = cislo % 10
     cs += cifra
     cislo //= 10
     print(cifra)
-print("ciferný súčet =", cs)
+print('ciferný súčet =', cs)
 
 # 6)
 canvas = tk.Canvas()
 canvas.pack()
-cislo = int(input("zadaj číslo: "))
+cislo = int(input('zadaj číslo: '))
 x, y = 300, 150
 while cislo:
     cifra = cislo % 10
     cislo //= 10
-    canvas.create_rectangle(x, y, x+30, y+30, fill="lightblue")
-    canvas.create_text(x+15, y+15, text=cifra, font="arial 20")
+    canvas.create_rectangle(x, y, x+30, y+30, fill='lightblue')
+    canvas.create_text(x+15, y+15, text=cifra, font='arial 20')
     x -= 35
 
 # 7)
 canvas = tk.Canvas()
 canvas.pack()
-cislo = int(input("zadaj číslo: "))
+cislo = int(input('zadaj číslo: '))
 x, y = 300, 150
 while cislo:
     cifra = cislo % 8
     cislo //= 8
-    canvas.create_rectangle(x, y, x+30, y+30, fill="lightblue")
-    canvas.create_text(x+15, y+15, text=cifra, font="arial 20")
+    canvas.create_rectangle(x, y, x+30, y+30, fill='lightblue')
+    canvas.create_text(x+15, y+15, text=cifra, font='arial 20')
     x -= 35
 
 canvas = tk.Canvas()
 canvas.pack()
-cislo = int(input("zadaj číslo: "))
+cislo = int(input('zadaj číslo: '))
 x, y = 300, 150
 while cislo:
     cifra = cislo % 2
     cislo //= 2
-    canvas.create_rectangle(x, y, x+30, y+30, fill="lightblue")
-    canvas.create_text(x+15, y+15, text=cifra, font="arial 20")
+    canvas.create_rectangle(x, y, x+30, y+30, fill='lightblue')
+    canvas.create_text(x+15, y+15, text=cifra, font='arial 20')
     x -= 35
 
 # 8)
@@ -96,9 +96,9 @@ for i in range(n):
         x = j * 20 + 100
         y = i * 20 + 12
         if i == n//2 or j == n//2:
-            farba = "red"
+            farba = 'red'
         else:
-            farba = "white"
+            farba = 'white'
         canvas.create_oval(x-8, y-8, x+8, y+8, fill=farba)
 
 canvas = tk.Canvas()
@@ -109,17 +109,17 @@ for i in range(n):
         x = j * 20 + 100
         y = i * 20 + 12
         if i == j or j+i == n-1:
-            farba = "red"
+            farba = 'red'
         else:
-            farba = "white"
+            farba = 'white'
         canvas.create_oval(x-8, y-8, x+8, y+8, fill=farba)
 
 # 9)
 vyssi, pred, ziak = True, 0, 1
-print("zadávaj výšky žiakov")
+print('zadávaj výšky žiakov')
 while True:
-    vyska = input(f"    výška {ziak}. žiaka: ")
-    if vyska == "":
+    vyska = input(f'    výška {ziak}. žiaka: ')
+    if vyska == '':
         break
     vyska = int(vyska)
     if vyska < pred:
@@ -127,9 +127,9 @@ while True:
     pred = vyska
     ziak += 1
 if vyssi:
-    print("všetci žiaci sú zoradení správne")
+    print('všetci žiaci sú zoradení správne')
 else:
-    print("žiaci nie sú správne zoradení")
+    print('žiaci nie sú správne zoradení')
 
 # 10)
 canvas = tk.Canvas()
@@ -138,9 +138,9 @@ x, y = 190, 130
 r, k, i = 120, 6, 0
 while r > 14:
     if i%k:
-        farba = "black"
+        farba = 'black'
     else:
-        farba = "gray"
+        farba = 'gray'
     canvas.create_oval(x-r, y-r, x+r, y+r, outline=farba)
     i += 1
     r -= 3
@@ -156,14 +156,14 @@ for i in range(10):
     while sucet < k:
         cislo = random.randint(1, 4)
         canvas.create_oval(x, y, x+20, y+20)
-        canvas.create_text(x+10, y+10, text=cislo, font="arial 10")
+        canvas.create_text(x+10, y+10, text=cislo, font='arial 10')
         sucet += cislo
         x += 25
     if sucet == k:
-        txt, farba = "HURÁ", "green"
+        txt, farba = 'HURÁ', 'green'
     else:
-        txt, farba = "ŠKODA", "red"
-    canvas.create_text(325, y+10, text=txt, font="arial 10", fill=farba)
+        txt, farba = 'ŠKODA', 'red'
+    canvas.create_text(325, y+10, text=txt, font='arial 10', fill=farba)
     y += 25
 
 # 12)
@@ -172,9 +172,9 @@ canvas.pack()
 for i in range(4000):
     x, y = random.randint(0, 300), random.randint(0, 300)
     if 75 < x < 225 and 75 < y < 225:
-        farba = "red"
+        farba = 'red'
     else:
-        farba = "blue"
+        farba = 'blue'
     canvas.create_oval(x-5, y-5, x+5, y+5, fill=farba, width=0)
 
 # 13)
@@ -183,13 +183,13 @@ canvas.pack()
 for i in range(4000):
     x, y = random.randint(0, 300), random.randint(0, 300)
     if x <= y and 300-x < y:
-        farba = "green"
+        farba = 'green'
     elif x > y and 300-x >= y:
-        farba = "blue"
+        farba = 'blue'
     elif x <= y and 300-x >= y:
-        farba = "red"
+        farba = 'red'
     else:
-        farba = "yellow"
+        farba = 'yellow'
     canvas.create_oval(x-5, y-5, x+5, y+5, fill=farba, width=0)
 
 # 14)
@@ -200,9 +200,9 @@ r = 110
 for i in range(4000):
     x1, y1 = random.randint(0, 300), random.randint(0, 300)
     if (x1-x2)**2 + (y1-y2)**2 <= r**2:
-        farba = "red"
+        farba = 'red'
     else:
-        farba = "blue"
+        farba = 'blue'
     canvas.create_oval(x1-5, y1-5, x1+5, y1+5, fill=farba, width=0)
 
 # 15)
@@ -212,12 +212,12 @@ cervene = 0
 for i in range(10000):
     x, y = random.randint(0, 300), random.randint(0, 300)
     if x**2 + y**2 <= 300**2:
-        farba = "red"
+        farba = 'red'
         cervene += 1
     else:
-        farba = "blue"
+        farba = 'blue'
     canvas.create_oval(x-2, y-2, x+2, y+2, fill=farba, width=0)
-print("podiel =", cervene / 10000 * 4)
+print('podiel =', cervene / 10000 * 4)
 
 # 16)
 canvas = tk.Canvas(width=300, height=300)
@@ -235,8 +235,8 @@ for i in range(n):
         najv_x = x
     if najv_y < y:
         najv_y = y
-    canvas.create_oval(x-2, y-2, x+2, y+2, fill="red", width=0)
-canvas.create_rectangle(najm_x, najm_y, najv_x, najv_y, outline="blue")
+    canvas.create_oval(x-2, y-2, x+2, y+2, fill='red', width=0)
+canvas.create_rectangle(najm_x, najm_y, najv_x, najv_y, outline='blue')
 
 # 17)
 canvas = tk.Canvas(width=360, height=260)
@@ -244,11 +244,11 @@ canvas.pack()
 for i in range(10000):
     x, y = random.randint(10, 350), random.randint(10, 250)
     if y < 90:
-        farba = "black"
+        farba = 'black'
     elif y < 170:
-        farba = "red"
+        farba = 'red'
     else:
-        farba = "gold"
+        farba = 'gold'
     canvas.create_oval(x-5, y-5, x+5, y+5, fill=farba, width=0)
 
 # 18)
@@ -258,42 +258,42 @@ for i in range(10000):
     x, y = random.randint(10, 350), random.randint(10, 250)
     if y < 130:
         if y > x:
-            farba = "blue"
+            farba = 'blue'
         else:
-            farba = "white"
+            farba = 'white'
     else:
         if 130-x > y-130:
-            farba = "blue"
+            farba = 'blue'
         else:
-            farba = "red"
+            farba = 'red'
     canvas.create_oval(x-5, y-5, x+5, y+5, fill=farba, width=0)
 
 # 19)
-suma = int(input("začínam so sumou: "))
-print("štart ", end="")
+suma = int(input('začínam so sumou: '))
+print('štart ', end='')
 for i in range(1000):
     suma -= 1
-    print("-1", end="")
+    print('-1', end='')
     c1, c2, c3 = random.randint(1, 20), random.randint(1, 20), random.randint(1, 20)
     if c1 == c2 == c3:
         suma += 100
-        print("+100", end="")
+        print('+100', end='')
     elif c1 == c2 or c1 == c3 or c2 == c3:
         suma += 5
-        print("+5", end="")
+        print('+5', end='')
     if suma == 0:
         break
-print("\nzostalo mi", suma, "euro")
+print('\nzostalo mi', suma, 'euro')
 
 # 20)
-suma = int(input("zadaj číslo: "))
+suma = int(input('zadaj číslo: '))
 for bankovka in 100, 50, 20, 10, 5, 2, 1:
     if suma//bankovka != 0:
-        print(suma//bankovka, "krát hondota", bankovka)
+        print(suma//bankovka, 'krát hondota', bankovka)
     suma %= bankovka
 
 # 21)
-cislo = float(input("zadaj číslo: "))
+cislo = float(input('zadaj číslo: '))
 x = 0
 od, do = 0, cislo
 while abs(2**x - cislo) > 0.0001:
@@ -302,7 +302,7 @@ while abs(2**x - cislo) > 0.0001:
         do = x
     else:
         od = x
-print("logaritmus", cislo, "je", x)
+print('logaritmus', cislo, 'je', x)
 
 # 22)
 canvas = tk.Canvas(width=300, height=260)
