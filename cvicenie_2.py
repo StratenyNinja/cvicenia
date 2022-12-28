@@ -45,7 +45,7 @@ print('ciferný súčet je', sucet)
 
 # 8)
 n = int(input('zadaj n: '))
-retazec = '
+retazec = ''
 for i in range(n):
     retazec += '*' * (i+1) + ' '
 print(retazec)
@@ -53,7 +53,7 @@ print(retazec)
 # 9)
 od = int(input('zadaj od: '))
 do = int(input('zadaj do: '))
-retazec = '
+retazec = ''
 for i in range(od, do+1):
     retazec += f'<{i}> '
 print(retazec)
@@ -75,8 +75,8 @@ print('pi =', pi)
 
 # 12)
 samohlasky = input('zadaj samohlásky: ')
-for samohlasku in samohlasky:
-    print(f'S{i}d{i} m{i}ch{i} n{i} st{i}n{i}, s{i}d{i} {i} sp{i}.')
+for s in samohlasky:
+    print(f'S{s}d{s} m{s}ch{s} n{s} st{s}n{s}, s{s}d{s} {s} sp{s}.')
 
 # 13)
 od = int(input('zadaj od: '))
@@ -87,13 +87,13 @@ for i in range(od, do+1):
     print()
 print()
 
-print('     | ', end=')
+print('     | ', end='')
 for i in range(od, do+1):
     print(f'{i:4}', end=' ')
 print()
-print(f'=====|={'=' * 5 * (do-od+1)}')
+print(f'=====|={"=" * 5 * (do-od+1)}')
 for i in range(od, do+1):
-    print(f'{i:4} | ', end=')
+    print(f'{i:4} | ', end='')
     for j in range(od, do+1):
         print(f'{i*j:4}', end=' ')
     print()
@@ -129,7 +129,7 @@ riadky = int(input('zadaj počet riadkov: '))
 stlpce = int(input('zadaj počet stĺpcov: '))
 for i in range(riadky):
     for j in range(stlpce):
-        print(random.choice('O-'), end=')
+        print(random.choice('O-'), end='')
     print()
 
 # 18)
